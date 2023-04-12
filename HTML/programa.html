@@ -33,7 +33,7 @@
     document.write(2023-15)//con el document.write podemos pasar al resultado de un cálculo y, entre otras cosas, de manera dinámica ya que el mundo HTML no es capaz de realizar operaciones matemáticas.*/
 </script> -->
 
-<script>
+<!--<script>
   // declaración de variables
   var anho = 2023;
 
@@ -119,5 +119,30 @@
   document.write(tabla + " veces 8 es " + tabla * 8 + "<br>");
   document.write(tabla + " veces 9 es " + tabla * 9 + "<br>");
   document.write(tabla + " veces 10 es " + tabla * 10 + "<br>");
-</script>
+</script>-->
 
+<h1>PROGRAMA</h1>
+
+<script>
+  //las funciones siempres se declaran al inicio del código y se recomienda declar las funciones con vervos infinitos
+     function saltarLinea() {
+      document.write("<br>");
+     }
+  //aplicación saltos de línea sin document.write
+  var anho = 2025;
+
+  //opción 1: declarar los saltos de línea dentro de una variable para reutilizarla luego.
+  //var saltoLinea = "<br><br>";
+
+  //opción 2: usar funciones para reutilizar luego y ahorrar línea de código.
+
+  document.write("Jimena tiene: " + (anho - 2005) + " años");
+  //document.write(saltoLinea);
+  saltarLinea();
+
+  document.write("Paola tiene: " + (anho - 2012) + " años");
+  //document.write(saltoLinea);
+  saltarLinea();
+
+  document.write("Laura tiene: " + (anho - 2000) + " años");
+</script>
