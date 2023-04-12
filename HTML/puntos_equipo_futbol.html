@@ -1,0 +1,22 @@
+<meta charset="UTF8" />
+
+<h1>Puntos equipo de fútbol</h1>
+
+<script>
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+var victorias= parseInt(prompt("total de victorias"));//parseInt se usa para las variables que no son texto(es decir que la info que solicita el sistema es un número pero el compilador lo toma como texto) y requiero que me arroje números
+var empates = parseInt(prompt("total de empates"));
+totalPuntos = victorias + empates
+
+imprimir("El total de puntos del equipo es: " + totalPuntos);
+
+</script>

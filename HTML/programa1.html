@@ -1,0 +1,26 @@
+<meta charset="UTF8" />
+
+<h1>PROGRAMA1-funciones</h1>
+
+<script>
+  //las funciones siempre se declaran al inicio del código js
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+  }//función sin parametros
+
+
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }//función con parámetro especificado ya que de no declararse no retornará el valor deseado; adicional es posible usar otras funciones dentro de otra función para reducir código.
+
+  imprimir("Marcela juega fútbol de manera profesional.");
+  imprimir("Carlos está a punto de ser adulto.");
+
+//años de diferencia
+ var miEdad=34;
+ var edadHermano=26;
+
+ imprimir("Nuestra diferencia de edad es de " + (miEdad-edadHermano)+ " años.");
+</script>
