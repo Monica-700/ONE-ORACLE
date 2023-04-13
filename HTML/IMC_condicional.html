@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CÁLCULO IMC</title>
+  </head>
+  <body>
+    <h1>CÁLCULO IMC- (práctica condicional if)</h1>
+
+    <script>
+      function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+      }
+
+      function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+      }
+
+      function calcularImc(peso, altura) {
+        return peso / (altura * altura);
+        //return su usa en el momento en el que se requiera retornar un valor x.
+      }
+
+      nombre = prompt("Digite su nombre"); //prompt se usa para generar ventanas emergentes donde los clientes ingresan info para retornar un valor en la pantalla.
+
+      pesoUsuario = prompt(nombre + " escriba su peso en kg");
+      alturaUsuario = prompt(nombre + " escriba su altura en metros");
+      imcUsuario = calcularImc(pesoUsuario, alturaUsuario);
+
+      imprimir(nombre + "," + " Su índice de masa corporal es: " + imcUsuario);
+
+      if (imcUsuario < 18.5) {
+        imprimir("Estas por debajo de lo recomendado");
+      }
+
+      if (imcUsuario >= 18.5)
+        if (imcUsuario < 25) {
+          imprimir("Tu inddice de masa corporal es normal.");
+        }
+
+      if (imcUsuario >= 25) {
+        if (imcUsuario < 30) imprimir("Te estás pasando ¡ponte pilas!");
+      }
+
+      if (imcUsuario >= 30) {
+        imprimir(
+          "¡ups! te pasaste de lo recomendado, con un poco de ejercicio y comida saludable te pondrás en forma."
+        );
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>!ADIVINA¡</title>
+  </head>
+  <body>
+    <h1>Adivina el número</h1>
+
+    <script>
+      function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+      }
+
+      function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+      }
+
+      var numeroAleatorio = Math.round(Math.random()*3)//Math.round se usa para redondear los números cuando el sistema los genera como decimales y math.random se usa para que el sistema genere números aleatorios 
+      var numeroIngresado = parseInt(prompt("Ingresa un número entre 0 y 3"));//parseInt se usa para convertir texto en números ya que al solicitar al usuario ingresar  números en la ventana emergente el sistema lo toma como texto.
+
+      if (numeroAleatorio== numeroIngresado){
+        imprimir("Lo lograste ¡FELICITACIONES!")
+      }
+
+      else{
+        imprimir("¡Sgue intentando! era el "+ numeroAleatorio)
+      }
+
+      
+    </script>
+  </body>
+</html>
