@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>!ADIVINA¡</title>
+  </head>
+  <body>
+    <h1>Adivina el número</h1>
+
+    <script>
+      function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+      }
+
+      function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+      }
+      function sorteo(n){
+        return Math.round(Math.random()*10);
+      }
+
+      var numeroAleatorio = Math.round(Math.random()*10);
+      var numeroIngresado = parseInt(prompt("Ingresa un número entre 0 y 10"));
+
+      if (numeroAleatorio== numeroIngresado){
+        imprimir("Lo lograste ¡FELICITACIONES!");
+      }
+
+      else{
+        if (numeroAleatorio > numeroIngresado){
+            imprimir("¡Oh! no acertaste, el número pensado es mayor que el que ingresaste.")
+        }
+        else {
+            imprimir("¡Oh! no acertaste, el número pensado es menor que el que ingresaste.")
+         }
+      }
+
+    </script>
+  </body>
+</html>
